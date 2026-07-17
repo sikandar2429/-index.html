@@ -22,23 +22,23 @@ body {
     user-select: none;
 }
 
-/* Flex container */
+/* Flex container with tight spacing */
 .button-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 12px; /* Slightly reduced gap between buttons */
+    gap: 8px; /* Tight gap between buttons */
     flex-wrap: nowrap; 
 }
 
-/* Slightly smaller, sleeker capsule button styling */
+/* Compact, low-profile capsule button styling */
 .button-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; /* Reduced gap inside button */
-    padding: 8px 18px; /* Reduced padding for a tighter fit */
+    gap: 6px; /* Tight gap inside button */
+    padding: 6px 12px; /* Very small padding for a mini badge look */
     background: transparent;
     border: 1px solid #1c3d2d; 
     border-radius: 50px; 
@@ -47,46 +47,46 @@ body {
     cursor: pointer;
 }
 
-/* Icons scaled down to 22px (down from 28px) */
+/* Micro icons scaled to 16px */
 .icon-svg {
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
     display: block;
 }
 
 .youtube-icon {
-    width: 22px;
+    width: 16px;
     height: auto;
 }
 
 .examside-icon {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 12px; /* Scaled text down inside ES icon */
+    font-size: 9px; /* Tiny ES text */
     font-weight: bold;
     color: #ffffff;
     background: #0073e6; 
     border-radius: 50%;
-    width: 22px; /* Scaled down ES icon container */
-    height: 22px;
+    width: 16px; /* Micro ES badge matching other icons */
+    height: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Typography scaled down to 15px (down from 18px) */
+/* Micro font size matching standard Notion caption text */
 .button-text {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 15px; 
+    font-size: 12px; 
     color: #ffffff;
     letter-spacing: 0.5px;
     white-space: nowrap;
 }
 
-/* Gentle interactive glow hover state */
+/* Hover state */
 .button-link:hover {
     background: rgba(77, 171, 122, 0.05); 
     border-color: #4DAB7A; 
-    box-shadow: 0 0 10px rgba(77, 171, 122, 0.15);
+    box-shadow: 0 0 8px rgba(77, 171, 122, 0.15);
 }
 </style>
 </head>
