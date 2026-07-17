@@ -22,61 +22,61 @@ body {
     user-select: none;
 }
 
-/* Flex container to keep all buttons in one horizontal line */
+/* Flex container */
 .button-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 16px; /* Spacing between the buttons */
-    flex-wrap: nowrap; /* Prevents them from breaking onto a new line */
+    gap: 12px; /* Slightly reduced gap between buttons */
+    flex-wrap: nowrap; 
 }
 
-/* Aesthetic capsule-shaped button style */
+/* Slightly smaller, sleeker capsule button styling */
 .button-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 10px 24px;
+    gap: 8px; /* Reduced gap inside button */
+    padding: 8px 18px; /* Reduced padding for a tighter fit */
     background: transparent;
-    border: 1px solid #1c3d2d; /* Subtle dark green border */
-    border-radius: 50px; /* Perfect pill shape */
+    border: 1px solid #1c3d2d; 
+    border-radius: 50px; 
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
-/* Icons styling */
+/* Icons scaled down to 22px (down from 28px) */
 .icon-svg {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     display: block;
 }
 
 .youtube-icon {
-    width: 28px;
+    width: 22px;
     height: auto;
 }
 
 .examside-icon {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
+    font-size: 12px; /* Scaled text down inside ES icon */
     font-weight: bold;
     color: #ffffff;
-    background: #0073e6; /* Bright blue for ExamSide branding */
+    background: #0073e6; 
     border-radius: 50%;
-    width: 26px;
-    height: 26px;
+    width: 22px; /* Scaled down ES icon container */
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Elegant text formatting matching the system monospace font stack */
+/* Typography scaled down to 15px (down from 18px) */
 .button-text {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: 15px; 
     color: #ffffff;
     letter-spacing: 0.5px;
     white-space: nowrap;
@@ -84,9 +84,9 @@ body {
 
 /* Gentle interactive glow hover state */
 .button-link:hover {
-    background: rgba(77, 171, 122, 0.05); /* Very light green tint */
-    border-color: #4DAB7A; /* Illuminates the clock's primary green */
-    box-shadow: 0 0 12px rgba(77, 171, 122, 0.15);
+    background: rgba(77, 171, 122, 0.05); 
+    border-color: #4DAB7A; 
+    box-shadow: 0 0 10px rgba(77, 171, 122, 0.15);
 }
 </style>
 </head>
@@ -103,12 +103,10 @@ body {
         <span class="button-text">Youtube</span>
     </a>
 
-    <!-- 2. PW Button (Official Icon with Full Name) -->
+    <!-- 2. PW Button -->
     <a href="https://www.pw.live" target="_blank" class="button-link">
         <svg class="icon-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <!-- Official Solid Black Circle Base -->
             <circle cx="50" cy="50" r="48" fill="#0D0D0D"/>
-            <!-- Perfectly proportioned bold brand typeface rendering -->
             <text x="49" y="62" 
                   font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
                   font-size="36" 
